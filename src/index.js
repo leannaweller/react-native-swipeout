@@ -17,6 +17,8 @@ import {
   ViewPropTypes,
 } from 'react-native';
 
+console.log('Hello from react-native-swipeout')
+
 const SwipeoutBtn = createReactClass({
 
   propTypes: {
@@ -288,8 +290,7 @@ const Swipeout = createReactClass({
     this._callOnClose();
     this.setState({
       openedRight: false,
-      openedLeft: false,
-      swiping: false,
+      openedLeft: false
     });
   },
 
